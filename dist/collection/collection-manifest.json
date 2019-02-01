@@ -1,0 +1,36 @@
+{
+  "components": [
+    {
+      "tag": "nova-badge",
+      "dependencies": [],
+      "componentClass": "Nova",
+      "componentPath": "components/nova/nova.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/nova/nova.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "score",
+          "type": "String",
+          "mutable": true,
+          "attr": "score",
+          "watch": [
+            "validateScore"
+          ]
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.17.0",
+    "typescriptVersion": "3.2.2"
+  },
+  "bundles": []
+}

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    {
+      "label": "nova-badge",
+      "description": "",
+      "attributes": [
+        {
+          "label": "score",
+          "description": "The score",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

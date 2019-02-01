@@ -1,0 +1,6 @@
+{
+  "generator-open-wc": {
+    "tagName": "test-open-wc-stencil",
+    "className": "TestOpenWcStencil"
+  }
+}
