@@ -3,10 +3,12 @@
     "@open-wc/testing": "^0.9.0",
     "@open-wc/testing-karma": "^0.4.0",
     "@open-wc/testing-karma-bs": "^0.2.0",
+    "http-server": "^0.11.1",
     "lit-html": "^1.0.0-rc.2",
     "webpack-merge": "^4.1.5"
   },
   "scripts": {
+    "serve": "hs .",
     "test": "karma start",
     "test:watch": "karma start --auto-watch=true --single-run=false",
     "test:es5": "karma start karma.es5.config.js",
