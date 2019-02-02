@@ -8,19 +8,15 @@ module.exports = config => {
     browserStack: {
       project: 'open-wc-stencil',
     },
-    browsers: [
-      'bs_win10_chrome_latest',
-      'bs_win10_firefox_latest',
-      'bs_win10_edge_latest',
-      'bs_osxmojave_safari_latest',
-      'bs_win10_ie_11', {
+    customLaunchers: {
+      bs_osxhighsierra_safari_111: {
         base: 'BrowserStack',
         browser: 'Safari',
         browser_version: '11.1',
         os: 'OS X',
-        os_version: 'High Sierra',
+        os_version: 'High Sierra'
       }
-    ]
+    }
   }));
   return config;
 };
