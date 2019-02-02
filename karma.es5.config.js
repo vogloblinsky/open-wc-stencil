@@ -4,6 +4,8 @@ const es5Settings = require('@open-wc/testing-karma/es5-settings.js');
 const karmaConf = require('./karma.conf.js');
 
 module.exports = config => {
-  config.set(merge(es5Settings(config), karmaConf(config)));
+  let proxyEs5Settings = es5Settings(config);
+  proxyEs5Settings.webpack.module.rules[0].options['plugins'] = ["@babel/plugin-syntax-dynamic-import"];
+  config.set(merge(proxyEs5Settings, karmaConf(config)));
   return config;
 };
