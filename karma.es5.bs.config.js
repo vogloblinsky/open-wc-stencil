@@ -6,7 +6,7 @@ const karmaEs5Config = require('./karma.es5.config.js');
 module.exports = config => {
   config.set(merge(bsSettings(config), karmaEs5Config(config), {
     browserStack: {
-      project: 'your-name',
+      project: 'open-wc-stencil',
     }
   }));
   return config;
