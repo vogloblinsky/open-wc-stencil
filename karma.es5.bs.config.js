@@ -18,5 +18,6 @@ module.exports = config => {
       }
     }
   }));
+  config.browsers = [...config.browsers, 'bs_osxhighsierra_safari_111'];
   return config;
 };
