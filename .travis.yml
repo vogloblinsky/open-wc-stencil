@@ -4,7 +4,7 @@ language: node_js
 install:
     - npm ci
 node_js:
-    - '9'
+    - '10'
 addons:
     browserstack:
         username: vincentogloblins1
