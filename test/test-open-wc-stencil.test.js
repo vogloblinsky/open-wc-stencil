@@ -37,4 +37,12 @@ describe('<nova-badge>', () => {
     const scoreElement = el.shadowRoot.querySelector('.score');
     assert.notEqual(scoreElement.getAttribute('class').indexOf('one'), -1);
   });
+
+  it('should support shadow DOM', async () => {
+    const canShadowDom = !!(
+      document.createElement('div').attachShadow ||
+      document.createElement('div').createShadowRoot
+    );
+    assert.isTrue(canShadowDom, 'Support SD');
+  });
 });
