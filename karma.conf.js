@@ -13,6 +13,13 @@ module.exports = config => {
       // your custom config
     }),
   );
+  config.client = {
+    captureConsole: true
+  };
+  // config.logLevel = 'DEBUG';
   config.reporters = ['mocha'];
+  // config.singleRun = false;
+  // console.log(config);
+
   return config;
 };
