@@ -36,13 +36,6 @@ module.exports = config => {
         browser_version: '62.0',
         os: 'Windows',
         os_version: '10'
-      },
-      bs_win_ie_10: {
-        base: 'BrowserStack',
-        browser: 'IE',
-        browser_version: '10.0',
-        os: 'Windows',
-        os_version: '8'
       }
     }
   }));
@@ -51,8 +44,7 @@ module.exports = config => {
     'bs_osxhighsierra_safari_111',
     'bs_osxhighsierra_safari_101',
     'bs_win_chrome_52',
-    'bs_win_firefox_62',
-    'bs_win_ie_10'
+    'bs_win_firefox_62'
   ];
   return config;
 };
