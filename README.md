@@ -11,7 +11,7 @@ npm i
 ## Demo of the Web Component
 
 ```
-npm run serve
+npm start
 ```
 
 ## Run test
