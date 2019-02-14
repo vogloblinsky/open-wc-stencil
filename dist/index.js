@@ -1,1 +1,0 @@
-// nova: CommonJS Main
