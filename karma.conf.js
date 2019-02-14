@@ -10,16 +10,23 @@ module.exports = config => {
         config.grep ? config.grep : 'test/**/*.test.js',
       ],
 
-      // your custom config
+      coverageIstanbulReporter: {
+        thresholds: {
+          global: {
+            statements: 60,
+            branches: 60,
+            functions: 60,
+            lines: 60
+          }
+        }
+      }
     }),
   );
-  config.client = {
-    captureConsole: true
-  };
-  // config.logLevel = 'DEBUG';
-  config.reporters = ['mocha'];
-  // config.singleRun = false;
-  // console.log(config);
-
+  config.webpack.module.rules[0].exclude = [
+    /\.core\.js/,
+    /\.test\.js/,
+    /\.define\.js/,
+    /\.components\.js/
+  ];
   return config;
 };
