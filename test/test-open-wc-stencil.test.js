@@ -1,6 +1,5 @@
 import {
   expect,
-  assert,
   fixture
 } from '@open-wc/testing';
 
@@ -20,13 +19,13 @@ describe('<my-component>', () => {
     const el = await fixture('<my-component></my-component>');
 
     const divElement = el.shadowRoot.querySelector('div');
-    assert.equal(divElement.textContent, `Hello, World! I'm `);
+    expect(divElement.textContent).to.equal(`Hello, World! I'm `);
   });
 
   it('Should render some text coming from attributes', async () => {
     const el = await fixture(`<my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>`);
 
     const divElement = el.shadowRoot.querySelector('div');
-    assert.equal(divElement.textContent, `Hello, World! I'm Stencil 'Don't call me a framework' JS`);
+    expect(divElement.textContent).to.equal(`Hello, World! I'm Stencil 'Don't call me a framework' JS`);
   });
 });
