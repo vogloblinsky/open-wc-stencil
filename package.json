@@ -13,7 +13,7 @@
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@open-wc/testing": "^0.9.17",
-    "@open-wc/testing-karma": "^0.4.9",
+    "@open-wc/testing-karma": "^0.4.10",
     "@open-wc/testing-karma-bs": "^0.2.10",
     "@stencil/core": "^0.18.0",
     "karma": "^4.0.0",
