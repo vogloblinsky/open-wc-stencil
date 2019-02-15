@@ -12,14 +12,12 @@ defineCustomElements(window);
 describe('<my-component>', () => {
   it('Rendered by Stencil', async () => {
     const el = await fixture('<my-component></my-component>');
-    await el.componentOnReady();
 
     expect(el.getAttribute('class')).to.equal('hydrated');
   });
 
   it('Should render some text', async () => {
     const el = await fixture('<my-component></my-component>');
-    await el.componentOnReady();
 
     const divElement = el.shadowRoot.querySelector('div');
     assert.equal(divElement.textContent, `Hello, World! I'm `);
@@ -27,7 +25,6 @@ describe('<my-component>', () => {
 
   it('Should render some text coming from attributes', async () => {
     const el = await fixture(`<my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>`);
-    await el.componentOnReady();
 
     const divElement = el.shadowRoot.querySelector('div');
     assert.equal(divElement.textContent, `Hello, World! I'm Stencil 'Don't call me a framework' JS`);
